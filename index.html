@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selvi Bakes</title>
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff8f2;
+      color: #3d2418;
+    }
+
+    header {
+      background: #7b3f00;
+      color: white;
+      padding: 18px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .hero {
+      padding: 55px 20px;
+      text-align: center;
+      background: #ffe0b2;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      margin-bottom: 22px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #25d366;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 35px 18px;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card .emoji {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e65100;
+      margin-bottom: 12px;
+    }
+
+    .order-btn {
+      border: none;
+      background: #7b3f00;
+      color: white;
+      padding: 9px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .about {
+      background: #fff0df;
+      text-align: center;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      color: #7b3f00;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #3d2418;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 500px) {
+      .products {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍰 Selvi Bakes</h1>
+  <p>Freshly Baked With Love ❤️</p>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Selvi Bakes</h2>
+  <p>Delicious cakes, bakery items & sweet treats made fresh for you.</p>
+
+  <a
+    class="btn"
+    href="https://wa.me/918056946727?text=Hi%20Selvi%20Bakes,%20I%20want%20to%20place%20an%20order."
+    target="_blank">
+    📲 Order on WhatsApp
+  </a>
+</section>
+
+<section>
+  <h2>🍰 Our Menu</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <div class="emoji">🎂</div>
+      <h3>Birthday Cake</h3>
+      <p class="price">₹500</p>
+
+      <a
+        class="order-btn"
+        href="https://wa.me/918056946727?text=Hi%20Selvi%20Bakes,%20I%20want%20to%20order%20Birthday%20Cake."
+        target="_blank">
+        Order
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🧁</div>
+      <h3>Cup Cake</h3>
+      <p class="price">₹50</p>
+
+      <a
+        class="order-btn"
+        href="https://wa.me/918056946727?text=Hi%20Selvi%20Bakes,%20I%20want%20to%20order%20Cup%20Cake."
+        target="_blank">
+        Order
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🍪</div>
+      <h3>Cookies</h3>
+      <p class="price">₹100</p>
+
+      <a
+        class="order-btn"
+        href="https://wa.me/918056946727?text=Hi%20Selvi%20Bakes,%20I%20want%20to%20order%20Cookies."
+        target="_blank">
+        Order
+      </a>
+    </div>
+
+    <div class="card">
+      <div class="emoji">🥐</div>
+      <h3>Fresh Bakery</h3>
+      <p class="price">₹80</p>
+
+      <a
+        class="order-btn"
+        href="https://wa.me/918056946727?text=Hi%20Selvi%20Bakes,%20I%20want%20to%20order%20Fresh%20Bakery%20Items."
+        target="_blank">
+        Order
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="about">
+  <h2>👩‍🍳 About Selvi Bakes</h2>
+
+  <p>
+    Selvi Bakes is a homemade bakery dedicated to
+    providing fresh, delicious and quality bakery items
+    for every special occasion.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>📞 Contact Us</h2>
+
+  <p>Owner: <strong>Selvi Bakes</strong></p>
+
+  <p style="margin-top:10px;">
+    Phone:
+    <a href="tel:+918056946727">
+      +91 80569 46727
+    </a>
+  </p>
+
+  <p style="margin-top:10px;">
+    <a
+      class="btn"
+      href="https://wa.me/918056946727"
+      target="_blank">
+      💬 Chat on WhatsApp
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Selvi Bakes. All Rights Reserved.
+</footer>
+
+</body>
+</html>
